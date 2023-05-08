@@ -1,0 +1,106 @@
+:root {
+  --bg1: #eee9da;
+  --bg2: #bdcdd6;
+  --bg3: #93bfcf;
+  --red1: #f15a59;
+  --red2: #ed2b2a;
+  --red3: #d21312;
+  --blueD: #070a52;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+.header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  background: #24025b66;
+  box-shadow: 0 8px 32px 0 #1f26875e;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 0.5em;
+}
+.logo {
+  width: 60px;
+}
+.nav a {
+  margin: 1em;
+  text-decoration: none;
+  color: var(--bg3);
+}
+.nav a:hover {
+  color: var(--red1);
+}
+.main {
+  background-color: var(--bg1);
+  height: 100vh;
+}
+.section_a {
+  position: relative;
+  display: flex;
+  background-image: linear-gradient(to left, var(--red3) 0%, var(--blueD) 100%);
+  color: var(--bg2);
+}
+.titulo {
+  font-size: 80px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--bg1);
+  padding: 0.8em 0.3em 0.2em;
+}
+.section_a__p {
+  width: 45vw;
+  margin: 0 4em 6em;
+}
+.escudo_fju {
+  width: 20em;
+  height: 20em;
+  margin: 3em auto 4em;
+}
+.wave {
+  position: absolute;
+  bottom: 0;
+  z-index: 300;
+}
+.section_b {
+  position: relative;
+  background-image: linear-gradient(to top, var(--bg3) 0%, var(--bg1) 100%);
+  color: var(--blueD);
+  padding: 1em;
+}
+.titulo3 {
+    display: inline;
+  font-size: 60px;
+  font-weight: 500;
+  padding: 0.2em 0.3em;
+}
+.section_b__p{
+    display: inline;
+    
+}
+.section_b__s{
+    display: inline;
+    margin: 2em;
+}
+.contain_proyects {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em 0.5em;
+}
+.contain_proyects img {
+  width: 5em;
+  height: 5em;
+}
+.contain_proyects img:hover{
+    transform: scale(1.5);
+}
+
+.none {
+  display: none;
+}
