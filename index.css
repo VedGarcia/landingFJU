@@ -6,6 +6,8 @@
   --red2: #ed2b2a;
   --red3: #d21312;
   --blueD: #070a52;
+  --bgYt1: #f97c226b;
+  --bgYt2: #f9d94959;
 }
 * {
   margin: 0;
@@ -99,6 +101,22 @@
 }
 .contain_proyects img:hover{
     transform: scale(1.5);
+}
+.help{
+  display: block;
+  width: 100% ;
+  height: 600px;
+  background-image: url(./img/pictures/img2.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+}
+.help .container{
+  background-image: linear-gradient(to left, var(--bgYt1) 0%, var(--bgYt2) 100%) ;
+  color: var(--bg2);
+}
+.titulo2{
+  font-size: 30px;
 }
 
 .none {
