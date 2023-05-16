@@ -15,20 +15,20 @@
   </head>
   <body>
     <header class="header">
-      <figure><img class="logo" src="./img/FJU.svg" alt="FJU logo" /></figure>
+      <figure><img class="header__logo" src="./img/FJU.svg" alt="FJU logo" /></figure>
       <nav class="nav">
-        <a href="#">Nosotros</a>
-        <a href="#">Proyectos</a>
-        <a href="#">Algo +</a>
-        <a href="#">FJU Cast</a>
-        <a href="#">Contáctanos</a>
+        <a class="nav__link" href="#">Nosotros</a>
+        <a class="nav__link" href="#">Proyectos</a>
+        <a class="nav__link" href="#">Algo +</a>
+        <a class="nav__link" href="#">FJU Cast</a>
+        <a class="nav__link" href="#">Contáctanos</a>
       </nav>
     </header>
     <main class="main">
-      <section class="section_a">
-        <div class="contain">
-          <h1 class="titulo"><span>FJU</span> Venezuela</h1>
-          <p class="section_a__p">
+      <section class="section-a">
+        <div>
+          <h1 class="section-a__titulo"><span class="section-a__titulo--span">FJU</span> Venezuela</h1>
+          <p class="section-a__p">
             En la FJU encontrarás una lugar donde podrás extraer el máximo de tu
             potencial y aprender a brillar. Es un una familia donde podrás
             encontrar jovenes que creen en ti apoyarán tu talento así como una
@@ -36,167 +36,158 @@
             valores forman parte de lo que somos.
           </p>
         </div>
-        <img class="escudo_fju" src="./img/fju rojo sf.png" alt="Escudo FJU" />
-        <img class="wave" src="./img/wave.svg" alt="" />
+        <img class="section-a__img" src="./img/fju rojo sf.png" alt="Escudo FJU" />
+        <img class="section-a__wave" src="./img/wave.svg" alt="" />
       </section>
-      <article>
-        <h4>Titulo de Articulo X</h4>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus vel debitis, illum laborum iure reprehenderit. Accusamus delectus hic quibusdam. Iste distinctio ipsam magni asperiores optio. Quas quisquam ut a saepe!</p> <br/>
+      <article class="article">
+        <h4 class="article__title">Titulo de Articulo X</h4>
+        <p class="article__p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus vel debitis, illum laborum iure reprehenderit. Accusamus delectus hic quibusdam. Iste distinctio ipsam magni asperiores optio. Quas quisquam ut a saepe!</p> <br/>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus vel debitis, illum laborum iure reprehenderit. Accusamus delectus hic quibusdam. Iste distinctio ipsam magni asperiores optio. Quas quisquam ut a saepe!
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus vel debitis, illum laborum iure reprehenderit. Accusamus delectus hic quibusdam.</p>
       </article>
-      <section class="section_b">
-        <div class="contain_phot">
-          <img class="wave2" src="./img/wave2.svg" alt="" />
-          <img class="wave3" src="./img/wave3.svg" alt="" />
+      <section class="section-b">
+        <div class="contain-phot">
+          <img class="contain-phot__wave" src="./img/wave2.svg" />
+          <img class="contain-phot__wave contain-phot__wave--bottom" src="./img/wave3.svg" />
         </div>
-        <div class="contain">
-          <span class="section_b__s">Mira todos nuestros</span><br />
-          <h3 class="titulo3">Proyectos</h3>
-          <p class="section_b__p">y cuentanos con cuál te identificas...</p>
-          <div class="contain_proyects">
-            <img src="./img/proyects/arcangeles.png" alt="Arcangeles" />
-            <img src="./img/proyects/asistentes.png" alt="Asistentes" />
-            <img src="./img/proyects/atalaya.png" alt="Atalaya" />
-            <img src="./img/proyects/cultura.png" alt="Cultura" />
-            <img src="./img/proyects/deportes.png" alt="Deportes" />
-            <img src="./img/proyects/help.png" alt="HELP" />
-            <img src="./img/proyects/medios.png" alt="Medios" />
-            <img src="./img/proyects/unifuerza.png" alt="Unifuerza" />
-            <img src="./img/proyects/universitarios.png" alt="Universitarios" />
+        <div>
+          <p class="section-b__p section-b__p--margin">Mira todos nuestros</p><br />
+          <h3 class="section-b__title">Proyectos</h3>
+          <p class="section-b__p">y cuentanos con cuál te identificas...</p>
+          <div class="contain-projects">
+          <a href="#"><img class="contain-projects__img" src="./img/proyects/arcangeles.png" alt="Arcangeles" /></a>
+          <a href="#"><img class="contain-projects__img" src="./img/proyects/asistentes.png" alt="Asistentes" /></a>
+          <a href="#"><img class="contain-projects__img" src="./img/proyects/atalaya.png" alt="Atalaya" /></a>
+          <a href="#"><img class="contain-projects__img" src="./img/proyects/cultura.png" alt="Cultura" /></a>
+          <a href="#"><img class="contain-projects__img" src="./img/proyects/deportes.png" alt="Deportes" /></a>
+          <a href="#"><img class="contain-projects__img" src="./img/proyects/help.png" alt="HELP" /></a>
+          <a href="#"><img class="contain-projects__img" src="./img/proyects/medios.png" alt="Medios" /></a>
+          <a href="#"><img class="contain-projects__img" src="./img/proyects/unifuerza.png" alt="Unifuerza" /></a>
+          <a href="#"><img class="contain-projects__img" src="./img/proyects/universitarios.png" alt="Universitarios" /></a>
           </div>
         </div>
-        <div class="contain_card">
-          <div class="card">
-            <img class="card_logo" src="./img/proyects/help.png" alt="HELP logo">
-            <div class="card_container">
-              <span>Proyecto</span>
-              <h2 class="titulo2">HELP</h2>
-              <p>
+        <div class="contain-card">
+          <div class="card card--help">
+            <img class="card__logo" src="./img/proyects/help.png" alt="HELP logo">
+            <div class="card__container">
+              <p class="card__container-p">Proyecto</p>
+              <h2 class="card__container-titulo">HELP</h2>
+              <p class="card__container-p" >
                 Tener a alguien que te escuche está genial, pero saber que
                 tienes a varias personas dispuestas a escucharte, ayudarte y que
                 se preocupan genuinamente por ti, es todavía mejor.
               </p>
-              <p>Acá en el proyecto <span>HELP</span> estamos para apoyarte.</p>
-              <button class="btn_card">Saber más</button>
+              <p class="card__container-p">Acá en el proyecto <span class="card__container--span">HELP</span> estamos para apoyarte.</p>
+              <button class="card__container-btn">Saber más</button>
             </div>
           </div>
           <div class="card">
-            <img class="card_logo" src="./img/proyects/universitarios.png" alt="Universitarios logo">
-             <div class="card_container">
-              <span>Proyecto</span>
-              <h2 class="titulo2">Universitarios</h2>
-              <p>
-                Tener a alguien que te escuche está genial, pero saber que
-                tienes a varias personas dispuestas a escucharte, ayudarte y que
-                se preocupan genuinamente por ti, es todavía mejor.
+            <img class="card__logo" src="./img/proyects/universitarios.png" alt="Universitarios logo">
+             <div class="card__container">
+              <p class="card__container-p">Proyecto</p>
+              <h2 class="card__container-titulo">Universitarios</h2>
+              <p class="card__container-p">
+                Si tu meta es complementar tus skills para convertirte en el mejor profesional.
               </p>
-              <p>Acá en el proyecto <span>HELP</span> estamos para apoyarte.</p>
-              <button class="btn_card">Saber más</button>
+              <p class="card__container-p">En el proyecto <span>Universitarios</span> estamos para apoyarte y hacer que puedas crecer en un ambito laboral.</p>
+              <button class="card__container-btn">Saber más</button>
             </div>
           </div>
           <div class="card">
-            <img class="card_logo" src="./img/proyects/medios.png" alt="Medios logo">
-             <div class="card_container">
-              <span>Proyecto</span>
-              <h2 class="titulo2">Medios</h2>
-              <p>
-                Tener a alguien que te escuche está genial, pero saber que
-                tienes a varias personas dispuestas a escucharte, ayudarte y que
-                se preocupan genuinamente por ti, es todavía mejor.
+            <img class="card__logo" src="./img/proyects/medios.png" alt="Medios logo">
+             <div class="card__container">
+              <p class="card__container-p">Proyecto</p>
+              <h2 class="card__container-titulo">Medios</h2>
+              <p class="card__container-p">
+                ¿Te apasiona la fotografía, el diseño o las redes sociales?<br>
+                En el proyecto Medios podrás potenciar todos tus talentos y formarte hasta alcanzar un nivel Pro.
               </p>
-              <p>Acá en el proyecto <span>HELP</span> estamos para apoyarte.</p>
-              <button class="btn_card">Saber más</button>
+            
+              <button class="card__container-btn">Saber más</button>
             </div>
           </div>
           <div class="card">
-            <img class="card_logo" src="./img/proyects/deportes.png" alt="Deportes logo">
-             <div class="card_container">
-              <span>Proyecto</span>
-              <h2 class="titulo2">Deportes</h2>
-              <p>
-                Tener a alguien que te escuche está genial, pero saber que
-                tienes a varias personas dispuestas a escucharte, ayudarte y que
-                se preocupan genuinamente por ti, es todavía mejor.
+            <img class="card__logo" src="./img/proyects/deportes.png" alt="Deportes logo">
+             <div class="card__container">
+              <p class="card__container-p">Proyecto</p>
+              <h2 class="card__container-titulo">Deportes</h2>
+              <p class="card__container-p">
+                El sedentarismo no paga, alimenta tu espiritu competitivo y ¡persigue un balón!
               </p>
-              <p>Acá en el proyecto <span>HELP</span> estamos para apoyarte.</p>
-              <button class="btn_card">Saber más</button>
+              <p class="card__container-p">En el proyecto <span>Deportes</span> siempre estamos organizando torneos relampagos y ligas.</p>
+              <button class="card__container-btn">Saber más</button>
             </div>
           </div>
           <div class="card">
-            <img class="card_logo" src="./img/proyects/cultura.png" alt="Cultura logo">
-             <div class="card_container">
-              <span>Proyecto</span>
-              <h2 class="titulo2">Cultura</h2>
-              <p>
-                Tener a alguien que te escuche está genial, pero saber que
-                tienes a varias personas dispuestas a escucharte, ayudarte y que
-                se preocupan genuinamente por ti, es todavía mejor.
+            <img class="card__logo" src="./img/proyects/cultura.png" alt="Cultura logo">
+             <div class="card__container">
+              <p class="card__container-p">Proyecto</>
+              <h2 class="card__container-titulo">Cultura</h2>
+              <p class="card__container-p">
+                Si te apasiona la actuación, cantar o bailar
               </p>
-              <p>Acá en el proyecto <span>HELP</span> estamos para apoyarte.</p>
-              <button class="btn_card">Saber más</button>
+              <p class="card__container-p">El proyecto <span>Cultura</span> te desafiará a probar y demostrar tus talentos en público.</p>
+              <button class="card__container-btn">Saber más</button>
             </div>
           </div>
           <div class="card">
-            <img class="card_logo" src="./img/proyects/unifuerza.png" alt="Unifuerza logo">
-             <div class="card_container">
-              <span>Proyecto</span>
-              <h2 class="titulo2">Unifuerza</h2>
-              <p>
-                Tener a alguien que te escuche está genial, pero saber que
-                tienes a varias personas dispuestas a escucharte, ayudarte y que
-                se preocupan genuinamente por ti, es todavía mejor.
+            <img class="card__logo" src="./img/proyects/unifuerza.png" alt="Unifuerza logo">
+             <div class="card__container">
+              <p class="card__container-p">Proyecto</p>
+              <h2 class="card__container-titulo">Unifuerza</h2>
+              <p class="card__container-p">
+                En este proyecto te vamos a formar en "Primeros auxilios" y cordinación de logística.
               </p>
-              <p>Acá en el proyecto <span>HELP</span> estamos para apoyarte.</p>
-              <button class="btn_card">Saber más</button>
+              <p class="card__container-p">Acá en el proyecto <span>Unifuerza</span> vas a crear hardskills.</p>
+              <button class="card__container-btn">Saber más</button>
             </div>
           </div>
           <div class="card">
-            <img class="card_logo" src="./img/proyects/asistentes.png" alt="Asistentes logo">
-             <div class="card_container">
-              <span>Proyecto</span>
-              <h2 class="titulo2">Asistentes</h2>
-              <p>
+            <img class="card__logo" src="./img/proyects/asistentes.png" alt="Asistentes logo">
+             <div class="card__container">
+              <p class="card__container-p">Proyecto</p>
+              <h2 class="card__container-titulo">Asistentes</h2>
+              <p class="card__container-p">
                 Tener a alguien que te escuche está genial, pero saber que
                 tienes a varias personas dispuestas a escucharte, ayudarte y que
                 se preocupan genuinamente por ti, es todavía mejor.
               </p>
-              <p>Acá en el proyecto <span>HELP</span> estamos para apoyarte.</p>
-              <button class="btn_card">Saber más</button>
+              <p class="card__container-p">Acá en el proyecto <span>HELP</span> estamos para apoyarte.</p>
+              <button class="card__container-btn">Saber más</button>
             </div>
           </div>
           <div class="card">
-            <img class="card_logo" src="./img/proyects/arcangeles.png" alt="Arcangeles logo">
-            <div class="card_container">
-              <span>Proyecto</span>
-              <h2 class="titulo2">Arcangeles</h2>
-              <p>
+            <img class="card__logo" src="./img/proyects/arcangeles.png" alt="Arcangeles logo">
+            <div class="card__container">
+              <p class="card__container-p">Proyecto</p>
+              <h2 class="card__container-titulo">Arcangeles</h2>
+              <p class="card__container-p">
                 Tener a alguien que te escuche está genial, pero saber que
                 tienes a varias personas dispuestas a escucharte, ayudarte y que
                 se preocupan genuinamente por ti, es todavía mejor.
               </p>
-              <p>Acá en el proyecto <span>HELP</span> estamos para apoyarte.</p>
-              <button class="btn_card">Saber más</button>
+              <p class="card__container-p">Acá en el proyecto <span>HELP</span> estamos para apoyarte.</p>
+              <button class="card__container-btn">Saber más</button>
             </div>
           </div>
           <div class="card">
-            <img class="card_logo" src="./img/proyects/atalaya.png" alt="Atalaya logo">
-            <div class="card_container">
-              <span>Proyecto</span>
-              <h2 class="titulo2">Atalaya</h2>
-              <p>
+            <img class="card__logo" src="./img/proyects/atalaya.png" alt="Atalaya logo">
+            <div class="card__container">
+              <p class="card__container-p">Proyecto</p>
+              <h2 class="card__container-titulo">Atalaya</h2>
+              <p class="card__container-p">
                 Tener a alguien que te escuche está genial, pero saber que
                 tienes a varias personas dispuestas a escucharte, ayudarte y que
                 se preocupan genuinamente por ti, es todavía mejor.
               </p>
-              <p>Acá en el proyecto <span>HELP</span> estamos para apoyarte.</p>
-              <button class="btn_card">Saber más</button>
+              <p class="card__container-p">Acá en el proyecto <span>HELP</span> estamos para apoyarte.</p>
+              <button class="card__container-btn">Saber más</button>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <p>¡Esatamos a nivel nacional! Siguenos en nuestras redes socilaes, cuentanos de donde eres y te indicaremos la direccion de nuestra central mas cercana.</p>
     </footer>
   </body>

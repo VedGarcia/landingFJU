@@ -31,22 +31,22 @@
   -webkit-backdrop-filter: blur(5px);
   padding: 0.5em;
 }
-.logo {
+.header__logo {
   width: 60px;
 }
-.nav a {
+.nav__link {
   margin: 1em;
   text-decoration: none;
   color: var(--bg3);
 }
-.nav a:hover {
+.nav__link:hover {
   color: var(--red1);
 }
 .main {
   position: relative;
   background-color: var(--bg1);
 }
-.section_a {
+.section-a {
   position: relative;
   width: 100%;
   height: 450px;
@@ -54,7 +54,7 @@
   background-image: linear-gradient(to left, var(--red3) 0%, var(--blueD) 100%);
   color: var(--bg2);
 }
-.titulo {
+.section-a__titulo {
   font-size: 80px;
   font-weight: 400;
   letter-spacing: 0;
@@ -62,70 +62,34 @@
   padding: 0.8em 0.3em 0.2em;
   margin: 0 0 0 100px;
 }
-.titulo span{
+.section-a__titulo--span{
   font-size: 80px;
   font-weight: 600;
   color: var(--letterLight);
 }
-.section_a__p {
+.section-a__p {
   width: 38vw;
   margin: 0 0 0 160px;
 }
-.escudo_fju {
+.section-a__img {
   width: 15em;
   height: 15em;
   margin: auto;
 }
-.wave {
+.section-a__wave {
   position: absolute;
   bottom: 0;
   z-index: 300;
 }
-article{
+.article{
   padding: 40px;
 }
-article h4{
+.article__title{
   margin: 20px;
   font-size: 40px ;
   color: var(--blueD);
 }
-.section_b {
-  position: relative;
-  background-color: var(--bg1);
-  color: var(--blueD);
-}
-.titulo3 {
-  display: inline;
-  font-size: 60px;
-  font-weight: 500;
-  padding: 0.2em 0.3em;
-}
-.section_b__p {
-  display: inline;
-}
-.section_b__s {
-  display: inline;
-  margin: 2em;
-}
-.contain_proyects {
-  position: relative;
-  z-index: 600;
-  display: flex;
-  justify-content: space-around;
-  padding: 1em 0.5em;
-}
-.contain_proyects img {
-  width: 5em;
-  height: 5em;
-  transition: .2s ease-in;
-
-}
-.contain_proyects img:hover {
-  transform: scale(1.5);
-  transition: .12s ease-in-out;
-}
-
-.contain_phot {
+.contain-phot {
   position: relative;
   display: block;
   width: 100%;
@@ -135,19 +99,50 @@ article h4{
   background-size: cover;
   background-position: bottom;
 }
-.wave2{
+.contain-phot__wave{
   position: absolute;
   z-index: 200;
 }
-.wave3 {
-  position: absolute;
-  z-index: 200;
+.contain-phot__wave--bottom {
   bottom: 0;
 }
-.titulo2 {
-  font-size: 30px;
+.section-b {
+  position: relative;
+  background-color: var(--bg1);
+  color: var(--blueD);
 }
-.contain_card{
+.section-b__title {
+  display: inline;
+  font-size: 60px;
+  font-weight: 500;
+  padding: 0.2em 0.3em;
+}
+.section-b__p {
+  display: inline;
+  font-size: 25px;
+}
+.section-b__p--margin {
+  margin: 2em;
+}
+.contain-projects {
+  position: relative;
+  z-index: 600;
+  display: flex;
+  justify-content: space-around;
+  padding: 1em 0.5em;
+}
+.contain-projects__img {
+  width: 5em;
+  height: 5em;
+  transition: .2s ease-in;
+
+}
+.contain-projects__img:hover {
+  transform: scale(1.5);
+  transition: .12s ease-in-out;
+}
+
+.contain-card{
   position: relative;
   display: flex;
   margin: 30px 0 0;
@@ -158,7 +153,6 @@ article h4{
 }
 .card{
   position: relative;
-  display: block;
   width: 350px;
   height: 200px;
   margin: 20px;
@@ -170,18 +164,14 @@ article h4{
   overflow: hidden;
   transition: ease-out 1s;
 }
-.card_logo{
+.card__logo{
   position: absolute;
   width: 80px;
   height: 80px;
   margin: 15px;
   filter: drop-shadow(0 0 10px var(--bg2));
 }
-.card:hover .card_container{
-  right: 0;
-  transition: ease-out .5s;
-}
-.card_container{
+.card__container{
   position: absolute;
   right: -100%;
   width: 100%;
@@ -191,14 +181,20 @@ article h4{
   backdrop-filter: blur(5px);
   padding: 15px;
   transition: ease-out 1s;
-
 }
-.card_container p, span{
+.card:hover .card__container{
+  right: 0;
+  transition: ease-out .5s;
+}
+.card__container-titulo {
+  font-size: 30px;
+}
+.card__container-p {
   font-size: 12px;
   font-weight: 500;
   color: var(--letterDark);
 }
-.btn_card{
+.card__container-btn{
   outline: none;
   border: none;
   border-radius: 5px;
@@ -206,7 +202,7 @@ article h4{
   margin: 10px 0;
   cursor: pointer;
 }
-footer{
+.footer{
   position: absolute;
   display: flex;
   width: 100%;
