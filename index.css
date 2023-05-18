@@ -2,7 +2,7 @@
   --bg1: #eee9da;
   --bg2: #bdcdd6;
   --bg3: #93bfcf;
-  --bgT: #d6e8db9f;
+  --bgT: #a5eef39f;
   --red1: #f15a59;
   --red2: #ed2b2a;
   --red3: #d21312;
@@ -10,6 +10,7 @@
   --bgYt1: #f97c226b;
   --bgYt2: #f9d94959;
   --letterDark: #0c0c0c;
+  --letterRedStrong: #310000;
   --letterLight: #e6e6e6;
 }
 * {
@@ -37,7 +38,7 @@
 .nav__link {
   margin: 1em;
   text-decoration: none;
-  color: var(--bg3);
+  color: var(--letterLight);
 }
 .nav__link:hover {
   color: var(--red1);
@@ -54,6 +55,18 @@
   background-image: linear-gradient(to left, var(--red3) 0%, var(--blueD) 100%);
   color: var(--bg2);
 }
+.section-a__contain-pht{
+  position: absolute;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+  opacity: 30%;
+  background-image: url(./img/pictures/Asistentes02.jpeg);
+}
+.section-a__contain{
+  position: relative;
+  z-index: 300;
+}
 .section-a__titulo {
   font-size: 80px;
   font-weight: 400;
@@ -61,6 +74,7 @@
   color: var(--bg1);
   padding: 0.8em 0.3em 0.2em;
   margin: 0 0 0 100px;
+  cursor: none;
 }
 .section-a__titulo--span{
   font-size: 80px;
@@ -69,9 +83,15 @@
 }
 .section-a__p {
   width: 38vw;
+  font-weight: 400;
+  line-height: 1.6;
   margin: 0 0 0 160px;
+  color: var(--letterLight);
+  text-shadow: 0 0 20px var(--letterRedStrong), 0 0 20px var(--letterRedStrong);
 }
 .section-a__img {
+  position: relative;
+  z-index: 400;
   width: 15em;
   height: 15em;
   margin: auto;
@@ -88,6 +108,9 @@
   margin: 20px;
   font-size: 40px ;
   color: var(--blueD);
+}
+.article__p{
+  line-height: 1.6;
 }
 .contain-phot {
   position: relative;
@@ -164,6 +187,35 @@
   overflow: hidden;
   transition: ease-out 1s;
 }
+.card--help{
+  background-image: url(./img/pictures/Help01.jpeg);
+}
+.card--universitarios{
+  background-image: url(./img/pictures/Universitarios.jpeg);
+}
+.card--medios{
+  background-image: url(./img/pictures/Medios01.jpeg);
+}
+.card--deportes{
+  background-image: url(./img/pictures/Deportes.jpeg);
+}
+.card--cultura{
+  background-image: url(./img/pictures/Cultura02.jpeg);
+  background-position: bottom;
+}
+.card--unifuerza{
+  background-image: url(./img/pictures/Unifuerza.jpeg);
+}
+.card--asistentes{
+  background-image: url(./img/pictures/Asistentes.jpeg);
+  background-position: 30% 20%;
+}
+.card--arcangeles{
+  background-image: url(./img/pictures/Arcangeles.jpeg);
+}
+.card--atalaya{
+  background-image: url(./img/pictures/Atalaya.jpeg);
+}
 .card__logo{
   position: absolute;
   width: 80px;
@@ -171,9 +223,14 @@
   margin: 15px;
   filter: drop-shadow(0 0 10px var(--bg2));
 }
+.card__logo--right{
+  right: 0;
+}
 .card__container{
   position: absolute;
   right: -100%;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   background: var(--bgT);
@@ -195,13 +252,22 @@
   color: var(--letterDark);
 }
 .card__container-btn{
+  position: absolute;
+  bottom: 0;
   outline: none;
   border: none;
   border-radius: 5px;
   padding: 5px 10px;
-  margin: 10px 0;
+  margin: 15px 0;
+  align-self: baseline;
+  font-weight: 500;
   cursor: pointer;
 }
+.card__container-btn:hover{
+  color: var(--letterLight);
+  background-color: var(--blueD);
+}
+
 .footer{
   position: absolute;
   display: flex;
